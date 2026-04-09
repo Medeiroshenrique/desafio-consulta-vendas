@@ -149,10 +149,10 @@ GET http://localhost:8080/sales/summary?minDate=2022-01-01&maxDate=2022-06-30
 
 ```bash
 # Clonar repositório
-git clone <seu-repositorio>
+git clone git@github.com:Medeiroshenrique/desafio-consulta-vendas.git
 
 # Entrar na pasta
-cd <nome-do-projeto>
+cd desafio-consulta-vendas/
 
 # Executar
 ./mvnw spring-boot:run

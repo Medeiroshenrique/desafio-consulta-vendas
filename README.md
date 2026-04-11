@@ -175,7 +175,7 @@ src/main/java/com/devsuperior/dsmeta
 
 ## 📌 Autor
 
-**Henrique Medeiros**
+**Henrique Medeiros**<br>
 🔗 LinkedIn: [https://www.linkedin.com/](https://www.linkedin.com/in/medeiroshenrique/)<br>
 💻 Portfólio: [https://henriquemedeirosportifolio.netlify.app](https://henriquemedeirosportifolio.netlify.app)
 

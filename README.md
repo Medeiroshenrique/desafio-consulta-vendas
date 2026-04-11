@@ -1,6 +1,6 @@
 # 📊 Sistema de Consulta de Vendas
 <p align="center">
-  <img src="desafio_vendas.gif" alt="Mockup do Projeto" width="500">
+  <img src="consulta-vendas.png" alt="Mockup do Projeto" width="500">
 </p>
 
 Projeto desenvolvido como parte do desafio do módulo de **Back-end (JPA, SQL e JPQL)**, com foco na construção de consultas eficientes utilizando **Spring Boot + JPA**.

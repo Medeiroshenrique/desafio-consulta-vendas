@@ -30,10 +30,10 @@ public class SaleController {
 	public Page<SaleReportMinDTO> getReport(
 			@RequestParam(required = false) String minDate,
 			@RequestParam(required = false) String maxDate,
-			@RequestParam(required = false) String sellerName,
+			@RequestParam(required = false) String name,
 			Pageable pageable)
 	{
-		return service.getSalesReport(minDate, maxDate, sellerName, pageable);
+		return service.getSalesReport(minDate, maxDate, name, pageable);
 	}
 
 	@GetMapping(value = "/summary")

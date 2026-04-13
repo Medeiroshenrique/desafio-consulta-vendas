@@ -46,18 +46,19 @@ public class SaleService {
 	@Transactional(readOnly = true)
 	public Page<SaleReportMinDTO> getSalesReport(
 			String minDateStr, String maxDateStr,
-			String sellerName, Pageable pageable)
+			String name, Pageable pageable)
 	{
 		LocalDate minDate = parseStringToLocalDate(minDateStr);
 		LocalDate maxDate = parseStringToLocalDate(maxDateStr);
 
 		LocalDate[] dates = getMinMaxDates(minDate, maxDate);
 
-		if(sellerName == null){
-			sellerName = "";
+		if(name == null){
+			name = "";
 		}
 
-		return repository.searchSalesReport(dates[0], dates[1], sellerName, pageable);
+		System.out.println("sellerName = [" + name + "]");
+		return repository.searchSalesReport(dates[0], dates[1], name, pageable);
 	}
 
 	private LocalDate parseStringToLocalDate(String date) {
@@ -74,7 +75,7 @@ public class SaleService {
 		}
 
 		if(minDate == null){
-			minDate = maxDate.minusYears(1L);
+			minDate = today.minusYears(1L);
 		}
 
 		return new LocalDate[]{minDate, maxDate};
